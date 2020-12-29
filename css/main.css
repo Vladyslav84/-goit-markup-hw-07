@@ -460,6 +460,15 @@ a {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.our-team-socil-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.link:hover .our-team-socil-item,
+.link:focus .our-team-socil-item {
+  fill: white;
+}
+
 .link {
   padding: 12px 12px;
   display: block;
@@ -475,8 +484,8 @@ a {
   background-color: var(--accent-color);
 }
 
-.soc-link:not(:last-child) {
-  margin-right: 10px;
+.link:hover .our-team-socil-item, .link:focus .our-team-socil-item {
+  fill: white;
 }
 
 .li-class {
@@ -497,10 +506,6 @@ a {
   margin-left: 32px;
 }
 
-.our-team-socil-links .link:hover, .link:focus .our-team-socil-links {
-  fill: white;
-}
-
 /*team-end--*/
 /* regular cliens */
 .regular-client {
@@ -515,24 +520,27 @@ a {
   display: flex;
 }
 
-.link-reg-cli:focus > .svg-logo1,
-.link-reg-cli:hover > .svg-logo1,
-.link-reg-cli:focus > .svg-logo2,
-.link-reg-cli:hover > .svg-logo2,
-.link-reg-cli:focus > .svg-logo3,
-.link-reg-cli:hover > .svg-logo3,
-.link-reg-cli:focus > .svg-logo4,
-.link-reg-cli:hover > .svg-logo4,
-.link-reg-cli:focus > .svg-logo5,
-.link-reg-cli:hover > .svg-logo5,
-.link-reg-cli:focus > .svg-logo6,
-.link-reg-cli:hover > .svg-logo6 {
+.regular-client-logo li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.regular-client-img:focus > .svg-logo1,
+.regular-client-img:hover > .svg-logo1,
+.regular-client-img:focus > .svg-logo2,
+.regular-client-img:hover > .svg-logo2,
+.regular-client-img:focus > .svg-logo3,
+.regular-client-img:hover > .svg-logo3,
+.regular-client-img:focus > .svg-logo4,
+.regular-client-img:hover > .svg-logo4,
+.regular-client-img:focus > .svg-logo5,
+.regular-client-img:hover > .svg-logo5,
+.regular-client-img:focus > .svg-logo6,
+.regular-client-img:hover > .svg-logo6 {
   fill: var(--accent-color);
-  border: 1px solid #2196f3;
-  border-radius: 4px;
 }
 
 .regular-client-img {
+  outline: none;
   width: 170px;
   height: 90px;
   display: block;
@@ -548,9 +556,9 @@ a {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.regular-client-img:not(:last-child) {
-  margin-right: 30px;
-  min-width: 170px;
+.regular-client-img:focus, .regular-client-img:hover {
+  border: 1px solid #2196f3;
+  outline: none;
 }
 
 .svg-logo1 {
