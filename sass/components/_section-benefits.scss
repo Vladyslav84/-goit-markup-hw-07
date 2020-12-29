@@ -9,16 +9,16 @@
   background-position: center;
 }
 .benefits-list-item.icon-antena::before {
-  background-image: url(/imagine/antenna1.svg);
+  background-image: url(./imagine/antenna1.svg);
 }
-.benefits-list-item.icon-clock::before {  
-  background-image: url(/imagine/clock1.svg);
+.benefits-list-item.icon-clock::before {
+  background-image: url(./imagine/clock1.svg);
 }
 .benefits-list-item.icon-diagram::before {
-  background-image: url(/imagine/diagram1.svg);
+  background-image: url(./imagine/diagram1.svg);
 }
 .benefits-list-item.icon-astronaut::before {
-  background-image: url(/imagine/astronaut1.svg);
+  background-image: url(./imagine/astronaut1.svg);
 }
 .benefits-list-item:not(:last-child) {
   margin-right: 30px;
