@@ -540,10 +540,12 @@ a {
 }
 
 .regular-client-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   outline: none;
   width: 170px;
   height: 90px;
-  display: block;
   content: "";
   background-color: #ffffff;
   border: 1px solid #afb1b8;
@@ -562,9 +564,6 @@ a {
 }
 
 .svg-logo1 {
-  padding: 20px 63px;
-  width: 170px;
-  height: 90px;
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
